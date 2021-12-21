@@ -8,10 +8,17 @@
 import Combine
 import SwiftUI
 
+enum ResultStates {
+    case none
+    case loading
+    case error(error: String)
+}
+
 final class AlbumsViewModel: ObservableObject {
     
     @Published var album: Album? = nil
-    @Published var completionMessage: String? = nil
+    @Published var errorMessage: String? = nil
+    @Published var resultStates: ResultStates = .loading
     
     private let networkService = NetworkService.instance
     
@@ -26,9 +33,11 @@ final class AlbumsViewModel: ObservableObject {
             .sink(receiveCompletion: { [unowned self] completion in
                 switch completion {
                 case .finished:
-                    self.completionMessage = "Data received."
+                    // TODO: handle this properly
+                    print("Data received.")
+                    self.resultStates = .none
                 case .failure(let err):
-                    self.completionMessage = err.localizedDescription
+                    self.resultStates = .error(error: err.localizedDescription)
                 }
             }, receiveValue: { receivedAlbum in
                 self.album = receivedAlbum

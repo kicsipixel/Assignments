@@ -15,6 +15,9 @@
 		5744342E2771E0CE00069827 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342D2771E0CE00069827 /* MainScreen.swift */; };
 		574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342F2771E17A00069827 /* AlbumsViewModel.swift */; };
 		574434332771E5DD00069827 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434322771E5DD00069827 /* NetworkService.swift */; };
+		574434352771F70400069827 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434342771F70400069827 /* ListRowView.swift */; };
+		574434372771FC8D00069827 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434362771FC8D00069827 /* ErrorView.swift */; };
+		574434392771FF5A00069827 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434382771FF5A00069827 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		5744342D2771E0CE00069827 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		5744342F2771E17A00069827 /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
 		574434322771E5DD00069827 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		574434342771F70400069827 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		574434362771FC8D00069827 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		574434382771FF5A00069827 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				5744342D2771E0CE00069827 /* MainScreen.swift */,
+				574434342771F70400069827 /* ListRowView.swift */,
+				574434362771FC8D00069827 /* ErrorView.swift */,
+				574434382771FF5A00069827 /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,11 +199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */,
+				574434352771F70400069827 /* ListRowView.swift in Sources */,
 				5744342E2771E0CE00069827 /* MainScreen.swift in Sources */,
 				574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */,
 				5744342A2771DB8D00069827 /* Album.swift in Sources */,
 				574434332771E5DD00069827 /* NetworkService.swift in Sources */,
 				574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */,
+				574434372771FC8D00069827 /* ErrorView.swift in Sources */,
+				574434392771FF5A00069827 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

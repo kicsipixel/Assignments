@@ -14,14 +14,19 @@ struct MainScreen: View {
     
     var body: some View {
         NavigationView {
-            if albumsVM.album != nil {
+            switch albumsVM.resultStates {
+            case .loading:
+                LoadingView()
+            case .none:
                 List {
                     ForEach(albumsVM.album!.feed.results, id:\.id) { album in
-                        Text(album.name)
+                        ListRowView(album: album)
                     }
                 }
-                .navigationTitle("\(albumsVM.album!.feed.title)")
+                .navigationTitle("\(albumsVM.album!.feed.country.uppercased()) \(albumsVM.album!.feed.title)")
                 .listStyle(PlainListStyle())
+            case .error(let err):
+                ErrorView(message: err)
             }
         }
     }
