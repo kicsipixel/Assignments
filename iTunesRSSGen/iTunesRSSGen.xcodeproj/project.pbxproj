@@ -14,6 +14,7 @@
 		5744342A2771DB8D00069827 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434292771DB8D00069827 /* Album.swift */; };
 		5744342E2771E0CE00069827 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342D2771E0CE00069827 /* MainScreen.swift */; };
 		574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342F2771E17A00069827 /* AlbumsViewModel.swift */; };
+		574434332771E5DD00069827 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434322771E5DD00069827 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		574434292771DB8D00069827 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		5744342D2771E0CE00069827 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		5744342F2771E17A00069827 /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
+		574434322771E5DD00069827 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		574434162771DAC500069827 /* iTunesRSSGen */ = {
 			isa = PBXGroup;
 			children = (
+				574434312771E5C900069827 /* NetworkService */,
 				5744342C2771E0AD00069827 /* ViewModel */,
 				5744342B2771E0A500069827 /* View */,
 				574434282771DB7D00069827 /* Model */,
@@ -106,6 +109,14 @@
 				5744342F2771E17A00069827 /* AlbumsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		574434312771E5C900069827 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				574434322771E5DD00069827 /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				5744342E2771E0CE00069827 /* MainScreen.swift in Sources */,
 				574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */,
 				5744342A2771DB8D00069827 /* Album.swift in Sources */,
+				574434332771E5DD00069827 /* NetworkService.swift in Sources */,
 				574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

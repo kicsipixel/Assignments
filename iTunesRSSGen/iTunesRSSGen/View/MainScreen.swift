@@ -13,7 +13,17 @@ struct MainScreen: View {
     @StateObject var albumsVM = AlbumsViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            if albumsVM.album != nil {
+                List {
+                    ForEach(albumsVM.album!.feed.results, id:\.id) { album in
+                        Text(album.name)
+                    }
+                }
+                .navigationTitle("\(albumsVM.album!.feed.title)")
+                .listStyle(PlainListStyle())
+            }
+        }
     }
 }
 
