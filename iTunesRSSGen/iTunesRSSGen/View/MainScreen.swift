@@ -17,6 +17,7 @@ struct MainScreen: View {
             switch albumsVM.resultStates {
             case .loading:
                 LoadingView()
+                
             case .none:
                 List {
                     ForEach(albumsVM.album!.feed.results, id:\.id) { album in
@@ -27,12 +28,11 @@ struct MainScreen: View {
                         } label: {
                             ListRowView(album: album)
                         }
-
-                        
                     }
                 }
                 .navigationTitle("\(albumsVM.album!.feed.country.uppercased()) \(albumsVM.album!.feed.title)")
                 .listStyle(PlainListStyle())
+                
             case .error(let err):
                 ErrorView(message: err)
             }

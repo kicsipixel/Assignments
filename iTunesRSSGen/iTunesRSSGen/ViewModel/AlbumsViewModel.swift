@@ -17,7 +17,6 @@ enum ResultStates {
 final class AlbumsViewModel: ObservableObject {
     
     @Published var album: Album? = nil
-    @Published var errorMessage: String? = nil
     @Published var resultStates: ResultStates = .loading
     
     private let networkService = NetworkService.instance
