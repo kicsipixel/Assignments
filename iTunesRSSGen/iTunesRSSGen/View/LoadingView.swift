@@ -9,12 +9,17 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        HStack {
-            Image(systemName: "stopwatch")
-                .foregroundColor(.green)
-                .font(.title.bold())
-            Text("Loading....")
-                .font(.title.bold())
+        ZStack {
+            Color.green.opacity(0.1)
+                .ignoresSafeArea()
+            
+            HStack {
+                Image(systemName: "stopwatch")
+                    .foregroundColor(.green)
+                    .font(.title.bold())
+                Text("Loading....")
+                    .font(.title.bold())
+            }
         }
     }
 }
@@ -22,6 +27,5 @@ struct LoadingView: View {
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
         LoadingView()
-            .previewLayout(.sizeThatFits)
     }
 }

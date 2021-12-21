@@ -20,7 +20,15 @@ struct MainScreen: View {
             case .none:
                 List {
                     ForEach(albumsVM.album!.feed.results, id:\.id) { album in
-                        ListRowView(album: album)
+                        
+                        // Passing copyright this way is definately the brightes solution but it works
+                        NavigationLink {
+                            DetailsView(album: album, copyright: albumsVM.album!.feed.copyright)
+                        } label: {
+                            ListRowView(album: album)
+                        }
+
+                        
                     }
                 }
                 .navigationTitle("\(albumsVM.album!.feed.country.uppercased()) \(albumsVM.album!.feed.title)")
