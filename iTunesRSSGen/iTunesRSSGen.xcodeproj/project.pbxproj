@@ -12,6 +12,7 @@
 		5744341C2771DAC500069827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5744341B2771DAC500069827 /* Assets.xcassets */; };
 		5744341F2771DAC500069827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5744341E2771DAC500069827 /* Preview Assets.xcassets */; };
 		574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434262771DB2D00069827 /* ApiEndpoint.swift */; };
+		5744342A2771DB8D00069827 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434292771DB8D00069827 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		5744341B2771DAC500069827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5744341E2771DAC500069827 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		574434262771DB2D00069827 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		574434292771DB8D00069827 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		574434162771DAC500069827 /* iTunesRSSGen */ = {
 			isa = PBXGroup;
 			children = (
+				574434282771DB7D00069827 /* Model */,
 				574434252771DB1C00069827 /* Constants */,
 				574434172771DAC500069827 /* iTunesRSSGenApp.swift */,
 				574434192771DAC500069827 /* ContentView.swift */,
@@ -76,6 +79,14 @@
 				574434262771DB2D00069827 /* ApiEndpoint.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		574434282771DB7D00069827 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				574434292771DB8D00069827 /* Album.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				5744341A2771DAC500069827 /* ContentView.swift in Sources */,
 				574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */,
 				574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */,
+				5744342A2771DB8D00069827 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
