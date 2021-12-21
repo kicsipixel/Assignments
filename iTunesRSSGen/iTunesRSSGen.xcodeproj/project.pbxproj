@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434172771DAC500069827 /* iTunesRSSGenApp.swift */; };
-		5744341A2771DAC500069827 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434192771DAC500069827 /* ContentView.swift */; };
 		5744341C2771DAC500069827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5744341B2771DAC500069827 /* Assets.xcassets */; };
 		5744341F2771DAC500069827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5744341E2771DAC500069827 /* Preview Assets.xcassets */; };
 		574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434262771DB2D00069827 /* ApiEndpoint.swift */; };
 		5744342A2771DB8D00069827 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434292771DB8D00069827 /* Album.swift */; };
+		5744342E2771E0CE00069827 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342D2771E0CE00069827 /* MainScreen.swift */; };
+		574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342F2771E17A00069827 /* AlbumsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		574434142771DAC500069827 /* iTunesRSSGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesRSSGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574434172771DAC500069827 /* iTunesRSSGenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesRSSGenApp.swift; sourceTree = "<group>"; };
-		574434192771DAC500069827 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5744341B2771DAC500069827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5744341E2771DAC500069827 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		574434262771DB2D00069827 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		574434292771DB8D00069827 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		5744342D2771E0CE00069827 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		5744342F2771E17A00069827 /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,11 @@
 		574434162771DAC500069827 /* iTunesRSSGen */ = {
 			isa = PBXGroup;
 			children = (
+				5744342C2771E0AD00069827 /* ViewModel */,
+				5744342B2771E0A500069827 /* View */,
 				574434282771DB7D00069827 /* Model */,
 				574434252771DB1C00069827 /* Constants */,
 				574434172771DAC500069827 /* iTunesRSSGenApp.swift */,
-				574434192771DAC500069827 /* ContentView.swift */,
 				5744341B2771DAC500069827 /* Assets.xcassets */,
 				5744341D2771DAC500069827 /* Preview Content */,
 			);
@@ -87,6 +90,22 @@
 				574434292771DB8D00069827 /* Album.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5744342B2771E0A500069827 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5744342D2771E0CE00069827 /* MainScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5744342C2771E0AD00069827 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5744342F2771E17A00069827 /* AlbumsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5744341A2771DAC500069827 /* ContentView.swift in Sources */,
 				574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */,
+				5744342E2771E0CE00069827 /* MainScreen.swift in Sources */,
 				574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */,
 				5744342A2771DB8D00069827 /* Album.swift in Sources */,
+				574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

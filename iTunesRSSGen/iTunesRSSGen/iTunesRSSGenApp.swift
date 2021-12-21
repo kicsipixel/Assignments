@@ -11,7 +11,8 @@ import SwiftUI
 struct iTunesRSSGenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // Calling the initial View as "screen" to indicate that it is the starting point
+            MainScreen()
         }
     }
 }
