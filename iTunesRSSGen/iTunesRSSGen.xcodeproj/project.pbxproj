@@ -18,6 +18,7 @@
 		574434352771F70400069827 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434342771F70400069827 /* ListRowView.swift */; };
 		574434372771FC8D00069827 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434362771FC8D00069827 /* ErrorView.swift */; };
 		574434392771FF5A00069827 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434382771FF5A00069827 /* LoadingView.swift */; };
+		5744343B2772121E00069827 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744343A2772121E00069827 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		574434342771F70400069827 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		574434362771FC8D00069827 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		574434382771FF5A00069827 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5744343A2772121E00069827 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				574434342771F70400069827 /* ListRowView.swift */,
 				574434362771FC8D00069827 /* ErrorView.swift */,
 				574434382771FF5A00069827 /* LoadingView.swift */,
+				5744343A2772121E00069827 /* DetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */,
+				5744343B2772121E00069827 /* DetailsView.swift in Sources */,
 				574434352771F70400069827 /* ListRowView.swift in Sources */,
 				5744342E2771E0CE00069827 /* MainScreen.swift in Sources */,
 				574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */,
@@ -354,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,7 +387,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
