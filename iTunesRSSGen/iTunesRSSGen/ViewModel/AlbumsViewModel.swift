@@ -5,7 +5,6 @@
 //  Created by Szabolcs Tóth on 2021. 12. 21..
 //
 
-import Combine
 import SwiftUI
 
 enum ResultStates {
@@ -15,31 +14,28 @@ enum ResultStates {
 }
 
 final class AlbumsViewModel: ObservableObject {
-    
-    @Published var album: Album? = nil
+
+    @Published var album: Album?
+    @Published var albums: [AlbumViewModel] = []
     @Published var resultStates: ResultStates = .loading
-    
-    private let networkService = NetworkService.instance
-    
-    var cancellable: AnyCancellable?
-    
-    init() {
-        getAlbumsByNetworkService()
-    }
-    
+
     func getAlbumsByNetworkService() {
-        cancellable = networkService.getAlbums()
-            .sink(receiveCompletion: { [unowned self] completion in
-                switch completion {
-                case .finished:
-                    // TODO: handle this properly
-                    print("Data received.")
-                    self.resultStates = .none
-                case .failure(let err):
-                    self.resultStates = .error(error: err.localizedDescription)
+        let endPoint = APIEndpoint.getRSSFeed
+
+        print(endPoint)
+        NetworkService().getData(endpoint: endPoint) { [weak self] (result: Result<Album, APIError>) in
+            switch result {
+            case .success(let album):
+                DispatchQueue.main.async {
+                    self?.album = album
+                    self?.albums = album.feed.results.map { AlbumViewModel(album: $0) }
+                    self?.resultStates = .none
                 }
-            }, receiveValue: { receivedAlbum in
-                self.album = receivedAlbum
-            })
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self?.resultStates = .error(error: error.localizedDescription)
+                }
+            }
+        }
     }
 }

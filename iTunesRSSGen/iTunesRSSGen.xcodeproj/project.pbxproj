@@ -10,15 +10,17 @@
 		574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434172771DAC500069827 /* iTunesRSSGenApp.swift */; };
 		5744341C2771DAC500069827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5744341B2771DAC500069827 /* Assets.xcassets */; };
 		5744341F2771DAC500069827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5744341E2771DAC500069827 /* Preview Assets.xcassets */; };
-		574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434262771DB2D00069827 /* ApiEndpoint.swift */; };
+		574434272771DB2D00069827 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434262771DB2D00069827 /* APIEndpoint.swift */; };
 		5744342A2771DB8D00069827 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434292771DB8D00069827 /* Album.swift */; };
 		5744342E2771E0CE00069827 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342D2771E0CE00069827 /* MainScreen.swift */; };
 		574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744342F2771E17A00069827 /* AlbumsViewModel.swift */; };
 		574434332771E5DD00069827 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434322771E5DD00069827 /* NetworkService.swift */; };
-		574434352771F70400069827 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434342771F70400069827 /* ListRowView.swift */; };
 		574434372771FC8D00069827 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434362771FC8D00069827 /* ErrorView.swift */; };
 		574434392771FF5A00069827 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574434382771FF5A00069827 /* LoadingView.swift */; };
-		5744343B2772121E00069827 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744343A2772121E00069827 /* DetailsView.swift */; };
+		5762666A285C8D1D002EB37A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57626669285C8D1D002EB37A /* APIError.swift */; };
+		5762666E285CA784002EB37A /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762666D285CA784002EB37A /* AlbumViewModel.swift */; };
+		57626670285CACA1002EB37A /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762666F285CACA1002EB37A /* RowView.swift */; };
+		57626672285CB144002EB37A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57626671285CB144002EB37A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,15 +28,17 @@
 		574434172771DAC500069827 /* iTunesRSSGenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesRSSGenApp.swift; sourceTree = "<group>"; };
 		5744341B2771DAC500069827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5744341E2771DAC500069827 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		574434262771DB2D00069827 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		574434262771DB2D00069827 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		574434292771DB8D00069827 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		5744342D2771E0CE00069827 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		5744342F2771E17A00069827 /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
 		574434322771E5DD00069827 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		574434342771F70400069827 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		574434362771FC8D00069827 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		574434382771FF5A00069827 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		5744343A2772121E00069827 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		57626669285C8D1D002EB37A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5762666D285CA784002EB37A /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		5762666F285CACA1002EB37A /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		57626671285CB144002EB37A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +94,8 @@
 		574434252771DB1C00069827 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				574434262771DB2D00069827 /* ApiEndpoint.swift */,
+				574434262771DB2D00069827 /* APIEndpoint.swift */,
+				57626669285C8D1D002EB37A /* APIError.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -107,10 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				5744342D2771E0CE00069827 /* MainScreen.swift */,
-				574434342771F70400069827 /* ListRowView.swift */,
 				574434362771FC8D00069827 /* ErrorView.swift */,
 				574434382771FF5A00069827 /* LoadingView.swift */,
-				5744343A2772121E00069827 /* DetailsView.swift */,
+				5762666F285CACA1002EB37A /* RowView.swift */,
+				57626671285CB144002EB37A /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				5744342F2771E17A00069827 /* AlbumsViewModel.swift */,
+				5762666D285CA784002EB37A /* AlbumViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -201,15 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5762666A285C8D1D002EB37A /* APIError.swift in Sources */,
+				57626672285CB144002EB37A /* DetailView.swift in Sources */,
 				574434182771DAC500069827 /* iTunesRSSGenApp.swift in Sources */,
-				5744343B2772121E00069827 /* DetailsView.swift in Sources */,
-				574434352771F70400069827 /* ListRowView.swift in Sources */,
 				5744342E2771E0CE00069827 /* MainScreen.swift in Sources */,
-				574434272771DB2D00069827 /* ApiEndpoint.swift in Sources */,
+				574434272771DB2D00069827 /* APIEndpoint.swift in Sources */,
 				5744342A2771DB8D00069827 /* Album.swift in Sources */,
 				574434332771E5DD00069827 /* NetworkService.swift in Sources */,
 				574434302771E17A00069827 /* AlbumsViewModel.swift in Sources */,
 				574434372771FC8D00069827 /* ErrorView.swift in Sources */,
+				57626670285CACA1002EB37A /* RowView.swift in Sources */,
+				5762666E285CA784002EB37A /* AlbumViewModel.swift in Sources */,
 				574434392771FF5A00069827 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ErrorView: View {
-    
+
     let message: String
-    
+
     var body: some View {
         ZStack {
             Color.red.opacity(0.1)

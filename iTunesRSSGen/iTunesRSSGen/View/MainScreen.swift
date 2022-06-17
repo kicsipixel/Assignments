@@ -9,33 +9,40 @@ import SwiftUI
 
 // Calling the initial View as "screen" to indicate that it is the starting point
 struct MainScreen: View {
-    
-    @StateObject var albumsVM = AlbumsViewModel()
-    
+
+    @StateObject var viewModel = AlbumsViewModel()
+
     var body: some View {
         NavigationView {
-            switch albumsVM.resultStates {
+            switch viewModel.resultStates {
             case .loading:
+                // MARK: - Loading
                 LoadingView()
-                
+
+                // MARK: - Result
             case .none:
-                List {
-                    ForEach(albumsVM.album!.feed.results, id:\.id) { album in
-                        
-                        // Passing copyright this way is definately the brightes solution but it works
-                        NavigationLink {
-                            DetailsView(album: album, copyright: albumsVM.album!.feed.copyright)
-                        } label: {
-                            ListRowView(album: album)
+                if let album = viewModel.album, let albums = viewModel.albums {
+                    NavigationView {
+                        List {
+                            ForEach(albums, id: \.self) { item in
+                                NavigationLink {
+                                    DetailView(album: album.feed, albumDetails: item)
+                                } label: {
+                                    RowView(albumDetails: item)
+                                }
+                            }
                         }
+                        .listStyle(PlainListStyle())
                     }
+                    .navigationTitle("\(album.feed.country.uppercased()) \( album.feed.title)")
                 }
-                .navigationTitle("\(albumsVM.album!.feed.country.uppercased()) \(albumsVM.album!.feed.title)")
-                .listStyle(PlainListStyle())
-                
+                // MARK: - Error
             case .error(let err):
                 ErrorView(message: err)
             }
+        }
+        .onAppear {
+            viewModel.getAlbumsByNetworkService()
         }
     }
 }

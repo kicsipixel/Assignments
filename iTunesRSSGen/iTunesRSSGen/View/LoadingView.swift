@@ -12,7 +12,7 @@ struct LoadingView: View {
         ZStack {
             Color.green.opacity(0.1)
                 .ignoresSafeArea()
-            
+
             HStack {
                 Image(systemName: "stopwatch")
                     .foregroundColor(.green)
